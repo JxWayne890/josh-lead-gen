@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,65 +10,6 @@
     <meta property="og:image" content="/og-image.png" />
     <link rel="icon" href="https://abilenecommercial.com/lovable-uploads/8e0f7a87-fcde-45bb-840a-20ba1452adde.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-    <style>
-      /* Minimalist, modern chatbot styles */
-      :root {
-        --n8n-chat-accent-color: #1a73e8;
-        --n8n-chat-widget-bg: transparent;
-        --n8n-chat-input-bg: #ffffff;
-      }
-      
-      .n8n-chat-widget {
-        max-width: 320px !important;
-        width: 100% !important;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
-        border-radius: 12px !important;
-      }
-      
-      .n8n-chat-widget__header {
-        background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%) !important;
-        color: white !important;
-        padding: 12px 16px !important;
-        border-top-left-radius: 12px !important;
-        border-top-right-radius: 12px !important;
-      }
-      
-      .n8n-chat-widget__title {
-        font-size: 0.9rem !important;
-        font-weight: 600 !important;
-        letter-spacing: -0.4px !important;
-      }
-      
-      .n8n-chat-widget__launcher {
-        background: #1a73e8 !important;
-        box-shadow: 0 4px 15px rgba(26, 115, 232, 0.2) !important;
-        border-radius: 50% !important;
-        width: 50px !important;
-        height: 50px !important;
-      }
-      
-      .n8n-chat-widget__launcher:hover {
-        transform: scale(1.05) !important;
-        background: #4285f4 !important;
-      }
-      
-      .n8n-chat-widget__message--bot,
-      .n8n-chat-widget__message--user {
-        border-radius: 10px !important;
-        max-width: 80% !important;
-      }
-      
-      .n8n-chat-widget__message--bot {
-        background-color: #e8f0fe !important;
-        color: #1a73e8 !important;
-      }
-      
-      .n8n-chat-widget__message--user {
-        background-color: #1a73e8 !important;
-        color: white !important;
-      }
-    </style>
   </head>
 
   <body>
@@ -87,7 +29,42 @@
           avatarUrl: 'https://abilenecommercial.com/lovable-uploads/8e0f7a87-fcde-45bb-840a-20ba1452adde.png'
         },
         theme: {
+          colors: {
+            primary: '#1a73e8',
+            background: '#ffffff',
+            userMessageBackground: '#1a73e8',
+            userMessageColor: '#ffffff',
+            botMessageBackground: '#e8f0fe',
+            botMessageColor: '#1a73e8',
+            headerBackground: 'linear-gradient(135deg, #1a73e8 0%, #4285f4 100%)'
+          },
           chat: {
+            maxWidth: '320px',
+            borderRadius: '12px',
+            boxShadow: '0 8px 25px rgba(0, 0, 0, 0.08)',
+            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+            header: {
+              borderTopLeftRadius: '12px',
+              borderTopRightRadius: '12px',
+              padding: '12px 16px'
+            },
+            headerTitle: {
+              fontSize: '0.9rem',
+              fontWeight: '600',
+              letterSpacing: '-0.4px'
+            },
+            launcher: {
+              size: '50px',
+              borderRadius: '50%',
+              background: '#1a73e8',
+              boxShadow: '0 4px 15px rgba(26, 115, 232, 0.2)',
+              hoverBackground: '#4285f4',
+              hoverTransform: 'scale(1.05)'
+            },
+            message: {
+              borderRadius: '10px',
+              maxWidth: '80%'
+            },
             messageList: {
               maxWidth: '400px'
             }
