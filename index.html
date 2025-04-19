@@ -11,35 +11,65 @@
     <link rel="icon" href="https://abilenecommercial.com/lovable-uploads/8e0f7a87-fcde-45bb-840a-20ba1452adde.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <style>
-      /* Custom chatbot styles */
+      /* Modern, sleek chatbot styles */
       :root {
-        --n8n-chat-accent-color: #1a73e8; /* Match site's blue color */
-        --n8n-chat-bot-message-bg: #e8f0fe; /* Light blue bg for bot messages */
-        --n8n-chat-widget-header-bg: #1a73e8; /* Blue header */
+        --n8n-chat-accent-color: #1a73e8; /* Primary blue from the site */
+        --n8n-chat-bot-message-bg: #e8f0fe; /* Light blue background */
+        --n8n-chat-widget-header-bg: #1a73e8; /* Header in site's primary blue */
+        --n8n-chat-widget-bg: #f8f9fa; /* Light gray background for chat */
+        --n8n-chat-input-bg: #ffffff; /* White input background */
       }
       
       .n8n-chat-widget {
-        border-radius: 12px !important;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+        border-radius: 16px !important; /* More rounded corners */
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important; /* Softer, more modern shadow */
+        max-width: 400px !important; /* Responsive width */
+        width: 100% !important;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
       }
       
       .n8n-chat-widget__header {
         padding: 16px !important;
+        background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%) !important; /* Gradient header */
+        color: white !important;
+        border-top-left-radius: 16px !important;
+        border-top-right-radius: 16px !important;
       }
       
       .n8n-chat-widget__title {
-        font-size: 1.1rem !important;
-        font-weight: 600 !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.5px !important;
       }
       
       .n8n-chat-widget__launcher {
         background: #1a73e8 !important;
-        box-shadow: 0 4px 14px rgba(26, 115, 232, 0.25) !important;
-        transition: transform 0.2s !important;
+        box-shadow: 0 6px 20px rgba(26, 115, 232, 0.3) !important;
+        transition: all 0.3s ease !important;
+        border-radius: 50% !important; /* Circular launcher */
       }
       
       .n8n-chat-widget__launcher:hover {
-        transform: scale(1.05) !important;
+        transform: scale(1.1) rotate(3deg) !important;
+        background: #4285f4 !important;
+      }
+      
+      .n8n-chat-widget__message--bot {
+        background-color: #e8f0fe !important;
+        border-radius: 12px !important;
+        color: #1a73e8 !important;
+      }
+      
+      .n8n-chat-widget__message--user {
+        background-color: #1a73e8 !important;
+        color: white !important;
+        border-radius: 12px !important;
+      }
+      
+      .n8n-chat-widget__input {
+        border-radius: 12px !important;
+        border: 1px solid #e0e0e0 !important;
+        padding: 12px !important;
       }
     </style>
   </head>
