@@ -9,39 +9,6 @@
     <meta name="author" content="Lovable" />
     <meta property="og:image" content="/og-image.png" />
     <link rel="icon" href="https://abilenecommercial.com/lovable-uploads/8e0f7a87-fcde-45bb-840a-20ba1452adde.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-    <style>
-      /* Custom chatbot styles */
-      :root {
-        --n8n-chat-accent-color: #1a73e8; /* Match site's blue color */
-        --n8n-chat-bot-message-bg: #e8f0fe; /* Light blue bg for bot messages */
-        --n8n-chat-widget-header-bg: #1a73e8; /* Blue header */
-      }
-      
-      .n8n-chat-widget {
-        border-radius: 12px !important;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
-      }
-      
-      .n8n-chat-widget__header {
-        padding: 16px !important;
-      }
-      
-      .n8n-chat-widget__title {
-        font-size: 1.1rem !important;
-        font-weight: 600 !important;
-      }
-      
-      .n8n-chat-widget__launcher {
-        background: #1a73e8 !important;
-        box-shadow: 0 4px 14px rgba(26, 115, 232, 0.25) !important;
-        transition: transform 0.2s !important;
-      }
-      
-      .n8n-chat-widget__launcher:hover {
-        transform: scale(1.05) !important;
-      }
-    </style>
   </head>
 
   <body>
@@ -49,26 +16,5 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-    <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-      createChat({
-        webhookUrl: 'https://n8n-1-yvtq.onrender.com/webhook/e2d6b4a0-a128-495b-b9fa-15a3d87054fc/chat',
-        title: 'Texas Commercial Assistant',
-        description: 'Your friendly commercial real estate assistant',
-        defaultAgent: {
-          name: 'TexasPro',
-          avatarUrl: 'https://abilenecommercial.com/lovable-uploads/8e0f7a87-fcde-45bb-840a-20ba1452adde.png'
-        },
-        theme: {
-          chat: {
-            messageList: {
-              maxWidth: '800px'
-            }
-          }
-        }
-      });
-    </script>
   </body>
 </html>
-
