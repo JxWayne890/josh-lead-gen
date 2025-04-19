@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,42 +31,37 @@
           colors: {
             primary: '#1a73e8',
             background: '#ffffff',
+            headerBackground: '#1a73e8',
+            headerText: '#ffffff',
             userMessageBackground: '#1a73e8',
-            userMessageColor: '#ffffff',
+            userMessageText: '#ffffff',
             botMessageBackground: '#e8f0fe',
-            botMessageColor: '#1a73e8',
-            headerBackground: 'linear-gradient(135deg, #1a73e8 0%, #4285f4 100%)'
+            botMessageText: '#1a73e8',
+            inputBackground: '#f1f3f4',
+            inputText: '#202124'
+          },
+          fonts: {
+            body: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
           },
           chat: {
-            maxWidth: '320px',
             borderRadius: '12px',
-            boxShadow: '0 8px 25px rgba(0, 0, 0, 0.08)',
-            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            header: {
-              borderTopLeftRadius: '12px',
-              borderTopRightRadius: '12px',
-              padding: '12px 16px'
-            },
-            headerTitle: {
-              fontSize: '0.9rem',
-              fontWeight: '600',
-              letterSpacing: '-0.4px'
-            },
-            launcher: {
-              size: '50px',
-              borderRadius: '50%',
-              background: '#1a73e8',
-              boxShadow: '0 4px 15px rgba(26, 115, 232, 0.2)',
-              hoverBackground: '#4285f4',
-              hoverTransform: 'scale(1.05)'
-            },
-            message: {
-              borderRadius: '10px',
-              maxWidth: '80%'
-            },
-            messageList: {
-              maxWidth: '400px'
-            }
+            width: '100%',
+            maxWidth: '320px'
+          },
+          header: {
+            padding: '12px 16px',
+            fontSize: '0.9rem',
+            fontWeight: '600',
+            letterSpacing: '-0.4px'
+          },
+          launcher: {
+            size: '50px',
+            borderRadius: '50%',
+            boxShadow: '0 4px 15px rgba(26, 115, 232, 0.2)'
+          },
+          messages: {
+            borderRadius: '10px',
+            maxWidth: '80%'
           }
         }
       });
